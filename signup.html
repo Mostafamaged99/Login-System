@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/login2.css" />
+  </head>
+  <body class="position-relative">
+    <section >
+      <div class="container p-5 rounded-5">
+        <div class="welcomeImg text-center">
+          <img src="./images/welcome.svg" alt="welcome" class="w-50 p-5" />
+        </div>
+        <div class="form">
+          <div class="firstName">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First Name"
+              id="firstNameInput"
+            />
+            <p class="hint first-name-hint p-2 rounded-3 invisible my-3">
+              <i class="fa-solid fa-triangle-exclamation pe-2"></i> First Name
+              should be one word more than 3 characters
+            </p>
+          </div>
+
+          <div class="lastName">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last Name"
+              id="lastNameInput"
+            />
+            <p class="hint last-name-hint p-2 rounded-3 invisible my-3">
+              <i class="fa-solid fa-triangle-exclamation pe-2"></i> Last Name
+              should be one word more than 3 characters
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 emailInput">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email address"
+                id="emailInput"
+              />
+              <p class="hint email-hint p-2 rounded-3 invisible my-3">
+                <i class="fa-solid fa-triangle-exclamation pe-2"></i> Invalid
+                email address
+              </p>
+            </div>
+
+            <div class="col-md-6 passwordInput">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter your password"
+                id="passwordInput"
+              />
+              <p class="hint password-hint p-2 rounded-3 invisible my-3">
+                <i class="fa-solid fa-triangle-exclamation pe-2"></i> Password
+                must contain at least 8 characters
+              </p>
+            </div>
+          </div>
+
+          <div class="row signupInputs text-center">
+            <div class="col-md-6">
+              <button
+                class="btn btn-1 w-75 bg-danger m-2 text-white"
+                id="registerBtn"
+              >
+                Create New Account
+              </button>
+            </div>
+            <div class="col-md-6">
+              <a href="/login.html">
+                <button class="btn btn-2 w-75 bg-primary m-2 text-white">
+                  Already Have Account?
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="welcome-success d-none position-absolute  justify-content-center align-items-center "
+      >
+        <div class="box rounded-5 text-center w-25 bg-white p-4">
+          <img src="./images/success.svg" alt="success" class="w-75" />
+          <p class="my-3">Congratulation, Your account has been successfully created.</p>
+          <a href="./login.html"
+            ><button class="btn loginBtn btn-primary">Login</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js" type="module"></script>
+  </body>
+</html>

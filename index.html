@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/login2.css" />
+    <script>
+        if (!localStorage.getItem('loggedUser')) {
+            location.href = '/login.html'
+        }
+    </script>
+  </head>
+  <body class="position-relative">
+    <section>
+      <div class="container p-5 rounded-5">
+        <div class="welcomeImg text-center">
+          <img
+            src="./images/avatars/avatar-male.jpg"
+            alt="sign-in image"
+            class="w-75 p-5"
+          />
+          <h1 class="">Hi Everyone!</h1>
+          <button
+          class="btn w-75 bg-danger mt-4 p-2 text-white"
+          id="logoutBtn"
+        >
+          Log out
+        </button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
